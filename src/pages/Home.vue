@@ -13,6 +13,7 @@
       <p>选择商品类目</p>
       <el-cascader class="search" v-model="value" :options="options" :props="props" @change="handleChange" placeholder="类目搜索，可输入关键词搜索类目" :clearable="true" size="large" filterable/>
     </div>
+    <el-text>{{ ttt[ttt.length -1] }}</el-text>
   </el-form>
 
 </template>
@@ -55,8 +56,11 @@ const props = {
   expandTrigger: 'hover' as const,
 }
 
+const ttt = ref("null")
+
 const handleChange = (value: any) => {
-  console.log(value)
+//   console.log(value)
+    ttt.value = value
 }
 
 const options = [
