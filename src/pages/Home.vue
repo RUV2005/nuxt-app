@@ -9,10 +9,9 @@
         <el-radio value="Venue">加工定制</el-radio>
       </el-radio-group>
     </el-form-item>
-    <div class="m-4">
-      <p>选择商品类目</p>
+    <el-form-item label="2. 选择商品类目" prop="resource">
       <el-cascader class="search" v-model="value" :options="options" :props="props" @change="handleChange" placeholder="类目搜索，可输入关键词搜索类目" :clearable="true" size="large" filterable/>
-    </div>
+    </el-form-item>
   </el-form>
 
 </template>
