@@ -14,7 +14,7 @@
             <el-cascader class="search" v-model="value" :options="options" :props="props" @change="handleChange"
                 placeholder="类目搜索，可输入关键词搜索类目" :clearable="true" size="large" filterable />
         </el-form-item>
-        <el-text>{{ ttt[ttt.length - 1] }}</el-text>
+        <el-text>{{ ttt}}</el-text>
     </el-form>
 
 </template>
@@ -46,7 +46,7 @@ const rules = reactive<FormRules<RuleForm>>({
     resource: [
         {
             required: true,
-            message: 'Please select activity resource',
+            message: '有必选项未选择',
             trigger: 'change',
         },
     ],
@@ -61,7 +61,10 @@ const ttt = ref("null")
 
 const handleChange = (value: any) => {
     //   console.log(value)
-    ttt.value = value
+    // ttt.value = value
+    if (ttt.value.length>0){
+        ttt.value =value[ value.length -1]
+    }
 }
 
 const options = [
