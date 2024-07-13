@@ -11,12 +11,8 @@
     </el-form-item>
     <el-form-item label="2. 选择商品类目" prop="resource">
       <el-cascader class="search" v-model="value" :options="options" :props="props" @change="handleChange" placeholder="类目搜索，可输入关键词搜索类目" :clearable="true" size="large" filterable/>
-<<<<<<< HEAD
-    </div>
     <el-text>{{ ttt[ttt.length -1] }}</el-text>
-=======
     </el-form-item>
->>>>>>> 8439ffbd8ccd4ce055321309b4a12ac8b8870d54
   </el-form>
 
 </template>
