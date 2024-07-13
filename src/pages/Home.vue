@@ -11,7 +11,7 @@
     </el-form-item>
     <div class="m-4">
       <p>选择商品类目</p>
-      <el-cascader class="search" v-model="value" :options="options" :props="props" @change="handleChange" placeholder="类目搜索，可输入关键词搜索类目" :clearable="true" size="large" />
+      <el-cascader class="search" v-model="value" :options="options" :props="props" @change="handleChange" placeholder="类目搜索，可输入关键词搜索类目" :clearable="true" size="large" filterable/>
     </div>
   </el-form>
 
@@ -23,7 +23,7 @@ h4 {
 }
 
 .search {
-  width: 100%;
+  width: 60%;
 }
 </style>
 
