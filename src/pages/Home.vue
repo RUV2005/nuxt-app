@@ -51,7 +51,7 @@ const options = useFetch('/api/santab', { method: 'GET' }).data
             </el-radio-group>
         </el-form-item>
         <el-form-item label="2. 选择商品类目" prop="resource">
-            <el-cascader class="search" v-model="value" :options="options" :props="props" @change="handleChange" placeholder="类目搜索，可输入关键词搜索类目" :clearable="true" size="large" filterable />
+            <el-cascader class="search" v-model="value" :options="options" :props="props" @change="handleChange" placeholder="类目搜索，可输入关键词搜索类目" :clearable="true" size="large" filterable v-if="options"/>
         </el-form-item>
         <el-text>{{ ttt }}</el-text>
     </el-form>
