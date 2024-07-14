@@ -1,11 +1,11 @@
 <script lang="ts" setup>
-import Photo from "./Photo.vue"
-import Category from "./Category.vue"
+import UploadProductPic from "./UploadProductPic.vue"
+import SelectProductCategory from "./SelectProductCategory.vue"
 
 </script>
 
 <template>
-    <Category />
-    <Photo />
+    <UploadProductPic />
+    <SelectProductCategory />
 
 </template>
