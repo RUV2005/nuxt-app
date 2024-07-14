@@ -6,10 +6,19 @@ import SalesInformation from "./SalesInformation.vue"
 import ServiceCommitment from "./ServiceCommitment.vue"
 import LogisticsInformation from "./LogisticsInformation.vue"
 import DetailInformation from "./DetailInformation.vue"
+
+defineProps({
+    product: {
+        type: Object,
+        required: true
+    }
+})
+
 </script>
 
 <template>
-    <SelectProductCategory /> // Done
+    <SelectProductCategory />
+    <!-- Up is down -->
     <UploadProductPic />
     <BasicInformation />
     <SalesInformation />

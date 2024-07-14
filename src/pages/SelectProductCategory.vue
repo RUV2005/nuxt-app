@@ -2,7 +2,6 @@
 import { reactive, ref, provide, } from 'vue'
 import type { ComponentSize, FormInstance, FormRules } from 'element-plus'
 
-
 interface RuleForm {
     resource: string
 }
@@ -17,7 +16,7 @@ const rules = reactive<FormRules<RuleForm>>({
         {
             required: true,
             message: '有必选项未选择',
-            trigger: 'change',
+            trigger: 'hover',
         },
     ],
 })
@@ -39,9 +38,6 @@ const handleChange = (value: any) => {
 }
 
 const selectedCategory = ref("null");
-
-
-
 
 provide('selectedCategory.value', selectedCategory);
 
@@ -77,9 +73,9 @@ const options = useFetch('/api/santab', { method: 'GET' }).data
 
 
 <style>
-h4 {
+/* h4 {
     text-align: center;
-}
+} */
 
 .search {
     width: 60%;
