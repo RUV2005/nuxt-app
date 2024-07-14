@@ -90,7 +90,6 @@ body {
 }
 
 #home {
-    background-color: aliceblue;
     width: 90%;
     margin: 0 auto;
 }
