@@ -9,8 +9,8 @@ import DetailInformation from "./DetailInformation.vue"
 </script>
 
 <template>
-    <UploadProductPic /> // Done
-    <SelectProductCategory />
+    <SelectProductCategory /> // Done
+    <UploadProductPic />
     <BasicInformation />
     <SalesInformation />
     <ServiceCommitment />
